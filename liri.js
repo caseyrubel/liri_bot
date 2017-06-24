@@ -40,13 +40,15 @@ function doit() {
 	  // If the code experiences any errors it will log the error to the console.
 		  if (error) {
 		    return console.log(error);
-		  }
+		  } else {
 
-		  dataArr = data.split(",");
-		  // We will then re-display the content as an array for later use.
-		  input = dataArr[0];
-		  songIn = dataArr[1];
-		  console.log(dataArr)
+			  dataArr = data.split(",");
+			  // We will then re-display the content as an array for later use.
+			  input = dataArr[0];
+			  songIn = dataArr[1];
+			  console.log(dataArr)
+			  runit();
+			}
 		});
 	}
 }
@@ -88,6 +90,7 @@ function runit() {
 		});
 	}
 }
+
+
 doit();
-runit();
 
