@@ -53,7 +53,6 @@ function doit() {
 	}
 }
 function runit() {
-	console.log('stuff')
 	if (input === 'my-tweets') {
 		var params = {screen_name: 'JoelEmbiid'};
 		client.get('statuses/user_timeline', params, function(error, tweets, response) {
